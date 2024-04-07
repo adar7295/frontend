@@ -7,6 +7,7 @@ const Home = () => {
         <h1>Adarsh Srivastav</h1>
         <h1>Adarsh Srivastav</h1>
         <h1>Adarsh Srivastav</h1>
+        <h1>Adarsh Srivastav</h1>
     </div>
   )
 }
