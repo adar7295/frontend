@@ -4,10 +4,6 @@ const Home = () => {
   return (
     <div>
         <h1>Adarsh Srivastav</h1>
-        <h1>Adarsh Srivastav</h1>
-        <h1>Adarsh Srivastav</h1>
-        <h1>Adarsh Srivastav</h1>
-        <h1>Adarsh Srivastav</h1>
     </div>
   )
 }
