@@ -1,7 +1,22 @@
-.loginBtn{
-    background-color: blue;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
+.backg{
+    background-color: brown;
+    height: 100vh;
+    width: 100%;
+    margin: 0%;
+}
+
+.main{
+    text-align: center;
+    background-color: aqua;
+    height: 500px;
+    width: 450px;
+    margin-left: 40%;
+    
+   
+}
+.login{
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    
 }
