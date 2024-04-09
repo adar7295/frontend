@@ -1,8 +1,13 @@
+'use client'
 import React from 'react'
 
 const EventHandling = () => {
   return (
-    <div> EventHandling</div>
+    <div> 
+        <h1>EventHandling</h1>
+    <hr/>
+    <button className='btn btn-primary' onClick={ () => { alert('hurrayyyy...')}}>click-me</button>
+    </div>
   )
 }
 
