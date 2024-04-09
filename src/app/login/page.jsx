@@ -6,11 +6,13 @@ const Login = () => {
     <div className={classes.backg}>
         <div className={classes.main}>
       <h2 className={classes.login}>Login-Page</h2>
-      Name<br/>
+      <label className={classes.mainlabel}>Name</label><br/>
       <input type="text" placeholder='Enter your name' /><br/>
-      Password<br />
+      
+      <label className={classes.mainlabel}>Password</label><br />
       <input type="password" placeholder='Enter your password' /><br/>
-      <button className='btn btn-primary'>Login</button>
+      <button className={classes.btn}>Login</button><br/>
+      <label className={classes.mainlabel}>create new account.Signup</label>
      </div>
     </div>
   )
