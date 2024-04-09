@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import Link from 'next/link';
 
 const Home = () => {
   return (
@@ -7,6 +8,7 @@ const Home = () => {
 
         <img src ="/next.svg" alt="" />
         <hr/><br/><input type="text" />
+        <Link href="/login">login</Link>
 
         <button className='mybtn'>My Button</button>
     </div>

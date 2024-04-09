@@ -1,5 +1,7 @@
 import React from 'react'
 import classes from './login.module.css'
+import Link from 'next/link';
+
 
 const Login = () => {
   return (
@@ -12,7 +14,7 @@ const Login = () => {
       <label className={classes.mainlabel}>Password</label><br />
       <input type="password" placeholder='Enter your password' /><br/>
       <button className={classes.btn}>Login</button><br/>
-      <label className={classes.mainlabel}>create new account.Signup</label>
+      <label className={classes.mainlabel}>create new account.<Link href="/signup">Signup</Link></label>
      </div>
     </div>
   )
