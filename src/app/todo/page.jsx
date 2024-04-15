@@ -19,6 +19,11 @@ const Todo = () => {
 
     }
 
+    const deleteTask = (index) => {
+          console.log(index);
+          
+    }
+
 
   return (
     <div className='container py-5'>
