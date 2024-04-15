@@ -26,6 +26,13 @@ const Todo = () => {
           setTodolist([...temp]);
     }
 
+    const finishTask = (index) => {
+        const temp = todolist;
+        temp[index].completed = !temp[index].completed;
+        console.log(temp);
+        setTodolist([...temp]);
+    } 
+
 
   return (
     <div className='container py-5'>
@@ -38,10 +45,17 @@ const Todo = () => {
             <div className="card-body">
                 {
                     todolist.map( (item, index)=>{
-                        return <div className='d-flex justify-content-between p-3'>
+                        return <div className='d-flex justify-content-between align-item-center p-3'>
                             <p>{item.task}</p>
+                            { item.completed ?
+                            <span className='badge bg-success'>Completed</span>
+                            :
+                            <span className='badge bg-warning'>pending</span>
+                        }
+
                             <div>
-                            <button className='btn btn-primary me-3'>Finish</button>
+                            <button onClick={ () => { finishTask(index) } }className='btn btn-primary me-3'>
+                            { item.completed ? 'Undo' : 'Finish'  }</button>
                             <button onClick={ () => { deleteTask(index) } }className='btn btn-danger'>Delete</button>
                             </div>
                         </div>
