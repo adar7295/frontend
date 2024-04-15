@@ -40,7 +40,10 @@ const Todo = () => {
                     todolist.map( (item, index)=>{
                         return <div className='d-flex justify-content-between p-3'>
                             <p>{item.task}</p>
+                            <div>
+                            <button className='btn btn-primary me-3'>Finish</button>
                             <button onClick={ () => { deleteTask(index) } }className='btn btn-danger'>Delete</button>
+                            </div>
                         </div>
                     } )
                 }
