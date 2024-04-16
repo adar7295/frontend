@@ -26,18 +26,18 @@
    
     margin-left: 30px;
     color: white;
-    padding-top: 20px;
+    margin-bottom: 20px;
     }
 .main input{
     margin-left: 30px;
     height: 40px;
-    width: 80%;
+    width: 90%;
     border-radius: 10px;
     border: 0;
-    margin-bottom: 20px;
+   
 }
 .btn{
-    width: 80%;
+    width: 90%;
     margin-left: 30px;
     height: 40px;
     border-radius: 10px;
@@ -45,5 +45,6 @@
     margin-bottom: 10px;
     font-family: 'Times New Roman', Times, serif;
     font-size: 20px;
+    margin-top: 20px;
 
 }
