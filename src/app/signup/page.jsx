@@ -39,6 +39,13 @@ const Signup = () => {
           'Content-Type':'application/json'
         }
       })
+      .then((response)=>{
+        console.log(response.status);
+        
+      })
+      .catch((err)=>{
+        console.log(err);
+      })
     },
     validationSchema: SignupSchema
   })
