@@ -18,6 +18,16 @@ const ManageUsers = () => {
         fetchUsers();
     }, [])
 
+    const deleteUser = async (id) => {
+        const res = await fetch(`http://localhost:500/user/delete/${id}`,{
+            method:'DELETE'
+        })
+        console.log(res.status);
+        if(res.status===200){
+            toast.success('user Deleted Successfully')
+            fetchUsers();
+        }
+    }
 
     return (
         <div className='pt-5'>
