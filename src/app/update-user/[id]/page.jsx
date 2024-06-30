@@ -1,9 +1,9 @@
 import React from 'react'
 
-const UpdateUSer = () => {
+const UpdateUser = () => {
   return (
-    <div>UpdateUSer</div>
+    <div>UpdateUser</div>
   )
 }
 
-export default UpdateUSer;
+export default UpdateUser;
