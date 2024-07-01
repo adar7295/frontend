@@ -1,6 +1,7 @@
 'use client';
 import React, { useEffect, useState } from 'react'
 import toast from 'react-hot-toast';
+import Link from 'next/link';
 
 const ManageUsers = () => {
 
@@ -57,7 +58,7 @@ const ManageUsers = () => {
                                     <td>{user.email}</td>
                                     <td>{new Date(user.createdAt).toDateString()}</td>
                                     <td>
-                                        <button  className='btn btn-primary'>Edit</button>
+                                        <Link href={`/update-user/${user._id}`} className='btn btn-primary'>Edit</Link>
                                     </td>
                                     <td>
                                         <button onClick={()=>{deleteUser(user._id)}} className='btn btn-danger'>Delete</button>
