@@ -37,7 +37,7 @@ const Login = () => {
         .then((result) => {
           console.log(result);
           localStorage.setItem('token',result.token);
-          
+          document.cookie = `token=${result.token}`;
         })
         .catch((err) => {
           console.log(err);
